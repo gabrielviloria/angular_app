@@ -1,13 +1,26 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-servers',
+  // Default Selector (Preferred)
+  selector: 'app-servers', 
+
+  // Selector as an Attribute 
+  // selector: '[app-servers]',
+
+  // Selector as a Class
+  // selector: '.app-servers',
+
+  templateUrl: 'servers.component.html',
+
+  // Alternative for templateUrl
+  /*
   template: 
-  // templateUrl: 'servers.component.html' 
   `
   <app-server></app-server>
   <app-server></app-server>
   `,
+  */
+
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent {
